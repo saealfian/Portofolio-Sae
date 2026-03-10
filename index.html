@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Developer Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .project-card {
+      background: #111827;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+
+</head>
+
+<body class="bg-gray-950 text-white">
+
+  <!-- NAVBAR -->
+
+  <header class="fixed w-full bg-gray-900/80 backdrop-blur z-50">
+
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+      <h1 class="text-xl font-bold text-blue-400">
+        Portfolio
+      </h1>
+
+      <nav class="hidden md:flex space-x-8">
+
+        <a href="#home" class="hover:text-blue-400">Home</a>
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#skills" class="hover:text-blue-400">Skills</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section id="home" class="min-h-screen flex items-center justify-center text-center px-6">
+
+    <div>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+
+        Hi, I'm
+        <span class="text-blue-400">Sae Alfian</span>
+
+      </h1>
+
+      <p class="text-xl text-gray-400 mb-6">
+
+        <span id="typing"></span>
+
+      </p>
+
+      <a href="#projects" class="bg-blue-500 px-8 py-3 rounded-lg hover:bg-blue-600">
+
+        View My Work
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about" class="py-24 px-6">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+      <div>
+
+        <h2 class="text-3xl font-bold text-blue-400 mb-6">
+          About Me
+        </h2>
+
+        <p class="text-gray-400 leading-relaxed">
+
+          I am a student passionate about web development and UI/UX design.
+          I enjoy building responsive and modern websites using HTML,
+          CSS, Tailwind CSS and JavaScript.
+
+          Currently I am improving my frontend skills by creating
+          projects and learning modern web technologies.
+
+        </p>
+
+      </div>
+
+      <div class="flex justify-center">
+
+        <img src="img/tiriz.jpg" class="rounded-xl shadow-lg">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+
+  <section id="skills" class="py-24 bg-gray-900 px-6">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+      <h2 class="text-3xl font-bold text-blue-400 mb-12">
+
+        Skills
+
+      </h2>
+
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <div class="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
+          HTML
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
+          CSS
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
+          Tailwind
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
+          JavaScript
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+
+  <section id="projects" class="py-24 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="text-3xl font-bold text-center text-blue-400 mb-16">
+
+        Projects
+
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card p-6">
+
+          <img src="img/img3.png" class="rounded-lg mb-4">
+
+          <h3 class="text-xl font-bold mb-2">
+            ID card
+          </h3>
+
+          <p class="text-gray-400 mb-4">
+
+            A personal profile card designed to showcase identity, skills, and contact information in a clean and modern
+            interface.
+
+          </p>
+
+          <div class="flex gap-2 text-sm mb-4">
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              HTML
+            </span>
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              Tailwind
+            </span>
+
+          </div>
+
+          <button class="text-blue-400 hover:underline">
+            View Project
+          </button>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card p-6">
+
+          <img src="img/img2.png" class="rounded-lg mb-4">
+
+          <h3 class="text-xl font-bold mb-2">
+            Website Design
+          </h3>
+
+          <p class="text-gray-400 mb-4">
+
+            A responsive landing page design created to present products or services with a modern layout and
+            user-friendly interface.
+
+          </p>
+
+          <div class="flex gap-2 text-sm mb-4">
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              HTML
+            </span>
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              Figma
+            </span>
+
+          </div>
+
+          <button class="text-blue-400 hover:underline">
+            View Project
+          </button>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card p-6">
+
+          <img src="img/img1.png" class="rounded-lg mb-4">
+
+          <h3 class="text-xl font-bold mb-2">
+            Register Page
+          </h3>
+
+          <p class="text-gray-400 mb-4">
+
+            A user registration interface designed with a clean layout and simple form structure to improve usability
+            and user experience.
+
+          </p>
+
+          <div class="flex gap-2 text-sm mb-4">
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              html
+            </span>
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              css
+            </span>
+
+          </div>
+
+          <button class="text-blue-400 hover:underline">
+            View Project
+          </button>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="py-24 bg-gray-900 px-6">
+
+    <div class="max-w-3xl mx-auto text-center">
+
+      <h2 class="text-3xl font-bold text-blue-400 mb-10">
+        Contact Me
+      </h2>
+
+      <p class="text-gray-400 mb-10">
+        Feel free to reach out if you want to collaborate or ask something.
+      </p>
+
+      <div class="space-y-6 text-lg">
+
+        <!-- Phone -->
+
+        <div class="flex items-center justify-center gap-4">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5h2l3 7-1.5 1.5a16 16 0 006.5 6.5L15 18l7 3v2a2 2 0 01-2 2C10 25 1 16 1 6a2 2 0 012-2z" />
+          </svg>
+
+          <span class="text-gray-300">
+            +62 5313651512
+          </span>
+
+        </div>
+
+
+        <!-- Email -->
+
+        <div class="flex items-center justify-center gap-4">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M16 12H8m8 0l-8-5m8 5l-8 5M4 6h16v12H4z" />
+          </svg>
+
+          <span class="text-gray-300">
+            saepian04@gmail.com
+          </span>
+
+        </div>
+
+
+        <!-- Instagram -->
+
+        <div class="flex items-center justify-center gap-4">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"></rect>
+            <circle cx="12" cy="12" r="3" stroke-width="2"></circle>
+            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"></circle>
+          </svg>
+
+          <a href="https://instagram.com/ianpiannn" target="_blank"
+            class="text-gray-300 hover:text-blue-400 transition">
+
+            @ianpiannn
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- FOOTER -->
+
+  <footer class="text-center py-6 border-t border-gray-800 text-gray-500">
+
+    © 2026 Muhammad sae alfian
+
+  </footer>
+
+
+  <!-- TYPING ANIMATION -->
+
+  <script>
+
+    const words = ["Frontend Developer", "UI/UX Designer", "Web Enthusiast"]
+
+    let i = 0
+    let timer
+
+    function typingEffect() {
+
+      let word = words[i].split("")
+
+      var loopTyping = function () {
+
+        if (word.length > 0) {
+
+          document.getElementById('typing').innerHTML += word.shift()
+
+        } else {
+
+          deletingEffect()
+
+          return false
+
+        }
+
+        timer = setTimeout(loopTyping, 100)
+
+      }
+
+      loopTyping()
+
+    }
+
+    function deletingEffect() {
+
+      let word = words[i].split("")
+
+      var loopDeleting = function () {
+
+        if (word.length > 0) {
+
+          word.pop()
+
+          document.getElementById('typing').innerHTML = word.join("")
+
+        } else {
+
+          i++
+
+          if (i >= words.length) {
+            i = 0
+          }
+
+          typingEffect()
+          return false
+
+        }
+
+        timer = setTimeout(loopDeleting, 50)
+
+      }
+
+      loopDeleting()
+
+    }
+
+    typingEffect()
+
+  </script>
+
+</body>
+
+</html>
