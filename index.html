@@ -31,6 +31,20 @@
 
 <body class="bg-gray-950 text-white">
 
+  <!-- INTRO SCREEN -->
+
+  <div id="intro" class="fixed inset-0 bg-gray-950 flex flex-col items-center justify-center z-[9999] cursor-pointer">
+
+    <h1 class="text-3xl md:text-5xl font-bold text-blue-400 mb-6 text-center">
+      أهلاً بكم في معرض أعمالي!
+    </h1>
+
+    <p class="text-gray-400 text-lg animate-pulse">
+      click anything to continue
+    </p>
+
+  </div>
+
   <!-- NAVBAR -->
 
   <header class="fixed w-full bg-gray-900/80 backdrop-blur z-50">
@@ -282,6 +296,96 @@
         </div>
 
 
+        <!-- PROJECT 4 -->
+
+        <div class="project-card p-6">
+
+          <img src="img/img4.png" class="rounded-lg mb-4">
+
+          <h3 class="text-xl font-bold mb-2">
+            create a shopping receipt
+          </h3>
+
+          <p class="text-gray-400 mb-4">
+            A simple console-based application designed to generate shopping receipts, including item details,
+             pricing, discounts, and total calculations.
+          </p>
+
+          <div class="flex gap-2 text-sm mb-4">
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              Dart
+            </span>
+
+          </div>
+
+          <button class="text-blue-400 hover:underline">
+            View Project
+          </button>
+
+        </div>
+
+
+        <!-- PROJECT 5 -->
+
+        <div class="project-card p-6">
+
+          <img src="img/img5.jpg" class="rounded-lg mb-4">
+
+          <h3 class="text-xl font-bold mb-2">
+            Web design cake
+          </h3>
+
+          <p class="text-gray-400 mb-4">
+            A modern cake shop website design focused on visual appeal, product showcase, and
+             responsive layout to enhance user experience.
+          </p>
+
+          <div class="flex gap-2 text-sm mb-4">
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              Figma app
+            </span>
+
+          </div>
+
+          <button class="text-blue-400 hover:underline">
+            View Project
+          </button>
+
+        </div>
+
+
+        <!-- PROJECT 6 -->
+
+        <div class="project-card p-6">
+
+          <img src="img/img6.png" class="rounded-lg mb-4">
+
+          <h3 class="text-xl font-bold mb-2">
+            Profile page
+          </h3>
+
+          <p class="text-gray-400 mb-4">
+            A mobile profile interface designed to display personal information, settings, and user
+             data in a clean and organized layout.
+          </p>
+
+          <div class="flex gap-2 text-sm mb-4">
+
+            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded">
+              Figma app
+            </span>
+
+          </div>
+
+          <button class="text-blue-400 hover:underline">
+            View Project
+          </button>
+
+        </div>
+
+
       </div>
 
     </div>
@@ -442,6 +546,23 @@
     }
 
     typingEffect()
+
+  </script>
+
+  <script>
+
+    const intro = document.getElementById("intro")
+
+    intro.addEventListener("click", () => {
+
+      intro.style.opacity = "0"
+      intro.style.transition = "0.8s"
+
+      setTimeout(() => {
+        intro.style.display = "none"
+      }, 800)
+
+    })
 
   </script>
 
